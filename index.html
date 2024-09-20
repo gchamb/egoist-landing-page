@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "egoist-black": "#151515",
+              "egoist-red": "#A91D3A",
+              "egoist-white": "#EEEEEE",
+            },
+            backgroundColor: {
+              "egoist-black": "#151515",
+              "egoist-red": "#A91D3A",
+              "egoist-white": "#EEEEEE",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-egoist-black">
+    <main class="p-24">
+      <div class="absolute top-10 right-8">
+        <image
+          class="w-[75px] h-[75px]"
+          src="./assets/images/egoist-logo.png"
+          alt="egoist-logo"
+        />
+      </div>
+
+      <div class="flex w-full justify-between">
+        <div class="max-w-lg space-y-8">
+          <h1 class="text-7xl font-bold text-egoist-white">Egoist</h1>
+
+          <h2 class="text-9xl font-bold text-egoist-red">
+            Take Your Progress Seriously
+          </h2>
+        </div>
+
+        <div class="my-auto mx-auto flex flex-col gap-y-16">
+          <div class="flex flex-col gap-y-8">
+            <h1 class="text-4xl font-semibold text-egoist-white">
+              What do we offer?
+            </h1>
+            <ul class="text-egoist-white text-xl flex flex-col gap-y-8">
+              <li>💪 Daily Gym Progress Entries</li>
+              <li>💪 Weekly/Monthly Progress Videos</li>
+              <li>💪 Weekly/Monthly Progress Reports</li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-y-6">
+            <h3 class="text-2xl font-semibold text-egoist-white">
+              Available on:
+            </h3>
+            <div>
+              <a>
+                <image
+                  class="w-[150px]"
+                  src="./assets/images/appstore.png"
+                  alt="app store logo to egoist"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="flex">
+      <!-- <image src="./assets/images/egoist-logo.png" alt="egoist-logo" /> -->
+
+      <!-- <div class="text-center">
+        <h1 class="text-5xl font-bold text-egoist-white">Egoist</h1>
+        <h2 class="text-lg font-semibold text-egoist-red">
+          Take Your Progress Seriously
+        </h2>
+      </div> -->
+    </div>
+  </body>
+</html>
